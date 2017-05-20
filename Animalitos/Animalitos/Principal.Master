@@ -1,4 +1,4 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterOfPages.master.cs" Inherits="Animalitos.MasterOfPages" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Principal.master.cs" Inherits="Animalitos.Principal" %>
 
 <!DOCTYPE html>
 
@@ -15,12 +15,6 @@
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
         </div>
-
-
-        <asp:Menu ID="Menu1" runat="server" Orientation="Horizontal">
-        </asp:Menu>
-
-
     </form>
 </body>
 </html>
