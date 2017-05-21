@@ -66,8 +66,34 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Imagenes\Botones\Aceptarbutton.png" />
+    <Content Include="Imagenes\Botones\animalitosbutton.png" />
+    <Content Include="Imagenes\banner.jpg" />
+    <Content Include="Imagenes\Botones\comprabutton.jpg" />
+    <Content Include="Imagenes\Botones\FAQbutton.png" />
+    <Content Include="Imagenes\Botones\ingresarbutton.png" />
+    <Content Include="Imagenes\Botones\iniciobutton.png" />
+    <Content Include="Imagenes\Botones\loginbutton.png" />
+    <Content Include="Imagenes\Botones\Registrarsebutton.jpg" />
+    <Content Include="Imagenes\Botones\salirbutton.jpg" />
+    <Content Include="Imagenes\Botones\separador.jpg" />
+    <Content Include="Imagenes\Botones\Ventabutton.jpg" />
+    <Content Include="Imagenes\bottomIMG.png" />
+    <Content Include="Imagenes\Random\1478016340954.jpg" />
+    <Content Include="Imagenes\Random\Random3.png" />
+    <Content Include="Imagenes\Random\Random1.png" />
+    <Content Include="Imagenes\Random\tumblr_nrasoaE5ke1tozkfjo1_500-1.png" />
+    <Content Include="Imagenes\zxcgzdrd56y.jpg" />
+    <Content Include="Imagenes\zxcvzsretse.png" />
+    <Content Include="Paginas\Animalitos.aspx" />
+    <Content Include="Paginas\Compra.aspx" />
+    <Content Include="Paginas\FAQ.aspx" />
+    <Content Include="Paginas\Inicio.aspx" />
     <Content Include="packages.config" />
     <Content Include="MasterOfPages.Master" />
+    <Content Include="Paginas\Login.aspx" />
+    <Content Include="Paginas\NewUser.aspx" />
+    <Content Include="Paginas\Venta.aspx" />
     <Content Include="Principal.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -80,19 +106,71 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Paginas\Animalitos.aspx.cs">
+      <DependentUpon>Animalitos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\Animalitos.aspx.designer.cs">
+      <DependentUpon>Animalitos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\Compra.aspx.cs">
+      <DependentUpon>Compra.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\Compra.aspx.designer.cs">
+      <DependentUpon>Compra.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\FAQ.aspx.cs">
+      <DependentUpon>FAQ.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\FAQ.aspx.designer.cs">
+      <DependentUpon>FAQ.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\Inicio.aspx.cs">
+      <DependentUpon>Inicio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\Inicio.aspx.designer.cs">
+      <DependentUpon>Inicio.aspx</DependentUpon>
+    </Compile>
     <Compile Include="MasterOfPages.Master.cs">
       <DependentUpon>MasterOfPages.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="MasterOfPages.Master.designer.cs">
       <DependentUpon>MasterOfPages.Master</DependentUpon>
     </Compile>
+    <Compile Include="Paginas\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\NewUser.aspx.cs">
+      <DependentUpon>NewUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\NewUser.aspx.designer.cs">
+      <DependentUpon>NewUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\Venta.aspx.cs">
+      <DependentUpon>Venta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\Venta.aspx.designer.cs">
+      <DependentUpon>Venta.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Principal.Master.cs">
       <DependentUpon>Principal.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Principal.Master.designer.cs">
       <DependentUpon>Principal.Master</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Usuario.cs" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

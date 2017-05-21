@@ -11,16 +11,96 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <div>
-            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-            </asp:ContentPlaceHolder>
+        <div align="center">           
+            <asp:Image runat="server" ID="imgBanner" ImageUrl="Imagenes/banner.jpg" ImageAlign="Middle" />
+        </div>
+        <div align="center">
+            <asp:TextBox runat="server" ID="tbxAbajodelBaner" BackColor="White" Font-Size="12" Font-Bold="True" Wrap="True" Width="994px" BorderWidth="0"></asp:TextBox>
+        </div>
+
+        <table width="100%">
+            <tr>
+                <td align="center">
+                    <table>
+                        <tr>
+                            <td>
+                                <div align="center">
+                                    <asp:Menu ID="Menu1" runat="server" Orientation="Horizontal" OnMenuItemClick="Menu1_MenuItemClick">
+                                        <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="5px" />
+                                        <Items>
+                                            <asp:MenuItem NavigateUrl="Paginas/Inicio.aspx" ImageUrl="Imagenes/Botones/iniciobutton.png"></asp:MenuItem>
+
+                                            <asp:MenuItem NavigateUrl="Paginas/Animalitos.aspx" ImageUrl="Imagenes/Botones/animalitosbutton.png" Selectable="False">
+                                                <asp:MenuItem ImageUrl="Imagenes/Botones/comprabutton.jpg" NavigateUrl="Paginas/Compra.aspx"></asp:MenuItem>
+                                                <asp:MenuItem ImageUrl="Imagenes/Botones/Ventabutton.jpg" NavigateUrl="Paginas/Venta.aspx"></asp:MenuItem>
+                                            </asp:MenuItem>
+
+                                            <asp:MenuItem ImageUrl="Imagenes/Botones/FAQbutton.png" NavigateUrl="Paginas/FAQ.aspx"></asp:MenuItem>
+
+                                            <asp:MenuItem ImageUrl="Imagenes/Botones/loginbutton.png" NavigateUrl="Paginas/Login.aspx">
+                                                <asp:MenuItem ImageUrl="Imagenes/Botones/Registrarsebutton.jpg" NavigateUrl="Paginas/NewUser.aspx"></asp:MenuItem>
+                                                <asp:MenuItem ImageUrl="Imagenes/Botones/salirbutton.jpg"></asp:MenuItem>
+                                            </asp:MenuItem>
+                                        </Items>
+                                    </asp:Menu>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+
+        <div align="center" id="contenido">
+            <asp:ContentPlaceHolder runat="server" ID="cphPrincipal" ></asp:ContentPlaceHolder>
         </div>
 
 
-        <asp:Menu ID="Menu1" runat="server" Orientation="Horizontal">
-        </asp:Menu>
+        <div align="center" id="piepagina">
+            
+            <div id ="imgbottom">
+                <asp:Image runat="server" ID="imgBottom" ImageUrl="Imagenes/bottomIMG.png" Width="188px"/>
+            </div>
+            <div id="menuinferior">
+                <table width="100%">
+                    <tr>
+                        <td align="center">
+                            <table>
+                                <tr>
+                                    <td>
+                                        <asp:Menu runat="server" Orientation="Horizontal">
+                                            <Items>
+                                                <asp:MenuItem Text="Home"></asp:MenuItem>
+                                                <asp:MenuItem Text="Contact"></asp:MenuItem>
+                                                <asp:MenuItem Text="Donate"></asp:MenuItem>
+                                            </Items>
+                                        </asp:Menu>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
 
+            </div>
+            <div id="disclaimer1">
+                <asp:TextBox runat="server" ID="tbxDisclaimer" Text="Animalitos.Nava.com no se hace responsable de la legalidad de sus productos. Cualquier queja sera ignorada." Width="647px" Wrap="True" Height="16px" BorderColor="White" BorderStyle="None" Font-Italic="True"></asp:TextBox>
+            </div>
+            <div id="disclaimer2">
+                <asp:TextBox runat="server" ID="tbxDisclaimer2" Text="Pagina aprovada bajo certificado | ISO 9069 | IEEE 8025.15 | Cisco™ | Sony Enterteinment™ | Nestle™ " Width="608px" BorderColor="White" BorderStyle="None" Font-Italic="True"></asp:TextBox>
+            </div>
+            <div id="disclaimer3">
+                <asp:TextBox runat="server" ID="tbxDisclaimer3" Text="Profesor ponganos 100" Width="144px" BorderColor="White" BorderStyle="None" Font-Italic="True"></asp:TextBox>
+            </div>
 
+        </div>
     </form>
+
+
+
+
+
+
+
 </body>
 </html>

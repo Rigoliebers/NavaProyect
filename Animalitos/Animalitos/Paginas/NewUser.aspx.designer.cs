@@ -7,99 +7,99 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Animalitos {
+namespace Animalitos.Paginas {
     
     
-    public partial class MasterOfPages {
+    public partial class NewUser {
         
         /// <summary>
-        /// head control.
+        /// lblUsuario control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder head;
+        protected global::System.Web.UI.WebControls.Label lblUsuario;
         
         /// <summary>
-        /// form1 control.
+        /// tbxUsername control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+        protected global::System.Web.UI.WebControls.TextBox tbxUsername;
         
         /// <summary>
-        /// imgBanner control.
+        /// lblContraseña control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image imgBanner;
+        protected global::System.Web.UI.WebControls.Label lblContraseña;
         
         /// <summary>
-        /// tbxAbajodelBaner control.
+        /// tbxContraseña control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tbxAbajodelBaner;
+        protected global::System.Web.UI.WebControls.TextBox tbxContraseña;
         
         /// <summary>
-        /// Menu1 control.
+        /// tbxConfirmarContraseña control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Menu Menu1;
+        protected global::System.Web.UI.WebControls.Label tbxConfirmarContraseña;
         
         /// <summary>
-        /// cphPrincipal control.
+        /// TextBox1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder cphPrincipal;
+        protected global::System.Web.UI.WebControls.TextBox TextBox1;
         
         /// <summary>
-        /// imgBottom control.
+        /// lblCorreo control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image imgBottom;
+        protected global::System.Web.UI.WebControls.Label lblCorreo;
         
         /// <summary>
-        /// tbxDisclaimer control.
+        /// tbxCorreo control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tbxDisclaimer;
+        protected global::System.Web.UI.WebControls.TextBox tbxCorreo;
         
         /// <summary>
-        /// tbxDisclaimer2 control.
+        /// lblStatus control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tbxDisclaimer2;
+        protected global::System.Web.UI.WebControls.Label lblStatus;
         
         /// <summary>
-        /// tbxDisclaimer3 control.
+        /// btnAceptar control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tbxDisclaimer3;
+        protected global::System.Web.UI.WebControls.ImageButton btnAceptar;
     }
 }
