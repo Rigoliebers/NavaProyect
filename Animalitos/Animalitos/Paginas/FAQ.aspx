@@ -49,5 +49,6 @@
         <p>
             Preguntenle al Einyel
         </p>
+        <asp:Image runat="server" ImageUrl="../Imagenes/Random/w3w2xjbnfg3wziwg3jel.gif"/>
     </div>
 </asp:Content>
