@@ -87,14 +87,13 @@
     <Content Include="Imagenes\zxcgzdrd56y.jpg" />
     <Content Include="Imagenes\zxcvzsretse.png" />
     <Content Include="Paginas\Animalitos.aspx" />
-    <Content Include="Paginas\Compra.aspx" />
     <Content Include="Paginas\FAQ.aspx" />
     <Content Include="Paginas\Inicio.aspx" />
     <Content Include="packages.config" />
     <Content Include="MasterOfPages.Master" />
     <Content Include="Paginas\Login.aspx" />
     <Content Include="Paginas\NewUser.aspx" />
-    <Content Include="Paginas\Venta.aspx" />
+    <Content Include="Paginas\Apartar.aspx" />
     <Content Include="Principal.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -113,13 +112,6 @@
     </Compile>
     <Compile Include="Paginas\Animalitos.aspx.designer.cs">
       <DependentUpon>Animalitos.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Paginas\Compra.aspx.cs">
-      <DependentUpon>Compra.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Paginas\Compra.aspx.designer.cs">
-      <DependentUpon>Compra.aspx</DependentUpon>
     </Compile>
     <Compile Include="Paginas\FAQ.aspx.cs">
       <DependentUpon>FAQ.aspx</DependentUpon>
@@ -156,12 +148,12 @@
     <Compile Include="Paginas\NewUser.aspx.designer.cs">
       <DependentUpon>NewUser.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Paginas\Venta.aspx.cs">
-      <DependentUpon>Venta.aspx</DependentUpon>
+    <Compile Include="Paginas\Apartar.aspx.cs">
+      <DependentUpon>Apartar.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Paginas\Venta.aspx.designer.cs">
-      <DependentUpon>Venta.aspx</DependentUpon>
+    <Compile Include="Paginas\Apartar.aspx.designer.cs">
+      <DependentUpon>Apartar.aspx</DependentUpon>
     </Compile>
     <Compile Include="Principal.Master.cs">
       <DependentUpon>Principal.Master</DependentUpon>

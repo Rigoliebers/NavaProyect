@@ -10,6 +10,6 @@
 namespace Animalitos.Paginas {
     
     
-    public partial class Animalitos {
+    public partial class Venta {
     }
 }

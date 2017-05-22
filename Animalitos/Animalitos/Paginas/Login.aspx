@@ -39,9 +39,10 @@
     <div>
         <tr>
             <td align="center">
-                <asp:ImageButton runat="server" ImageUrl="../Imagenes/Botones/ingresarbutton.png" ImageAlign="Middle" ID="btnAceptar" OnClick="CreateUser_OnContinueButtonClick"/>
             </td>
         </tr>
+                <asp:ImageButton runat="server" ImageUrl="../Imagenes/Botones/ingresarbutton.png" ImageAlign="Middle" ID="btnAceptar" OnClick="btnAceptar_Click"/>
+            <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Registrarse" />
     </div>
     
     
