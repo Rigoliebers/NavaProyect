@@ -22,15 +22,15 @@
                                 <asp:Label runat="server" Text="Contraseña:" ID="lblContraseña"></asp:Label>
                             </td>
                             <td>
-                                <asp:TextBox runat="server" ID="tbxContraseña" Text="" Width="160px"></asp:TextBox>
+                                <asp:TextBox runat="server" ID="tbxContraseña" Text="" Width="160px" TextMode="Password"></asp:TextBox>
                             </td>
                         </tr>
                         <tr>
                             <td align="right">
-                                <asp:Label runat="server" Text="Confirmar Contraseña:" ID="tbxConfirmarContraseña"></asp:Label>
+                                <asp:Label runat="server" Text="Confirmar Contraseña:" ID="lblConfirmarContraseña"></asp:Label>
                             </td>
                             <td>
-                                <asp:TextBox runat="server" ID="TextBox1" Text="" Width="160px"></asp:TextBox>
+                                <asp:TextBox runat="server" ID="tbxConfirmarContraseña" Text="" Width="160px" TextMode="Password"></asp:TextBox>
                             </td>
                         </tr>
                         <tr>
@@ -39,6 +39,14 @@
                             </td>
                             <td>
                                 <asp:TextBox runat="server" ID="tbxCorreo" Text="" Width="160px"></asp:TextBox>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="right">
+                                <asp:Label runat="server" Text="Nivel:" ID="lblNivel"></asp:Label>
+                            </td>
+                            <td>
+                                <asp:TextBox runat="server" ID="tbxNivel" Text="1" Width="160px"></asp:TextBox>
                             </td>
                         </tr>
                     </table>

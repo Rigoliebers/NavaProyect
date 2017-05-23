@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Web;
@@ -12,17 +14,51 @@ namespace Animalitos.Paginas
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            lblNivel.Visible = false;
+            tbxNivel.Visible = false;
 
+            if (Session["nivel"].Equals("69"))
+            {
+                lblNivel.Visible = true;
+                tbxNivel.Visible = true;
+            }
         }
         protected void CreateUser_OnContinueButtonClick(object sender, ImageClickEventArgs e)
         {
             if (tbxContraseña.Text.Equals(tbxConfirmarContraseña.Text)) //Y otras validaciones
             {
-                Usuario user = new Usuario();
-                user.Nombre = tbxUsername.Text;
-                user.Password = tbxContraseña.Text;
-                user.Correo = tbxCorreo.Text;
-                user.Nivel = "0";
+                string cnnstring = ConfigurationManager.ConnectionStrings["AnimalitosWebConnectionString"].ConnectionString;
+                SqlDataReader sqldr;
+                string query = "SELECT username FROM T_USUARIOS WHERE username = @USUARIO";
+                SqlConnection con = new SqlConnection();
+                SqlCommand cmd = new SqlCommand();
+                con.ConnectionString = cnnstring;
+                con.Open();
+                cmd.Connection = con;
+                cmd.CommandText = query;
+                cmd.Parameters.AddWithValue("@USUARIO", tbxUsername.Text);
+                sqldr = cmd.ExecuteReader();
+
+                if (sqldr.Read())
+                {
+                    lblStatus.ForeColor = Color.Red;
+                    lblStatus.Text = "El usuario ya existe";
+                }
+                else
+                {
+                    int nivel = Convert.ToInt16(tbxNivel.Text);
+                    con.Close();
+                    query = "INSERT INTO T_Usuarios VALUES (@USUARIO,@PASSWORD,@CORREO,@NIVEL)";
+                    cmd.Parameters.AddWithValue("@PASSWORD", tbxContraseña.Text);
+                    cmd.Parameters.AddWithValue("@CORREO", tbxCorreo.Text);
+                    cmd.Parameters.AddWithValue("@NIVEL", nivel);
+                    con.Open();
+                    cmd.CommandText = query;
+                    cmd.ExecuteNonQuery();
+                    con.Close();
+                    Response.Redirect("Redirect.aspx");
+                }
+
             }
             else
             {

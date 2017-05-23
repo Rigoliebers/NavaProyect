@@ -31,13 +31,13 @@
                                             <asp:MenuItem NavigateUrl="Paginas/Inicio.aspx" ImageUrl="Imagenes/Botones/iniciobutton.png"></asp:MenuItem>
 
                                             <asp:MenuItem NavigateUrl="Paginas/Animalitos.aspx" ImageUrl="Imagenes/Botones/animalitosbutton.png" Selectable="False">
-                                                <asp:MenuItem ImageUrl="Imagenes/Botones/Ventabutton.jpg" NavigateUrl="Paginas/Apartar.aspx"></asp:MenuItem>
+                                                <asp:MenuItem ImageUrl="Imagenes/Botones/Ventabutton.jpg" NavigateUrl="Paginas/Animalitos.aspx"></asp:MenuItem>
                                             </asp:MenuItem>
 
                                             <asp:MenuItem ImageUrl="Imagenes/Botones/FAQbutton.png" NavigateUrl="Paginas/FAQ.aspx"></asp:MenuItem>
                                             <asp:MenuItem ImageUrl="Imagenes/Botones/loginbutton.png" NavigateUrl="Paginas/Login.aspx">
                                                 <asp:MenuItem ImageUrl="Imagenes/Botones/Registrarsebutton.jpg" NavigateUrl="Paginas/NewUser.aspx"></asp:MenuItem>
-                                                <asp:MenuItem ImageUrl="Imagenes/Botones/salirbutton.jpg" NavigateUrl="Paginas/Login.aspx"></asp:MenuItem>
+                                                <asp:MenuItem ImageUrl="Imagenes/Botones/salirbutton.jpg" NavigateUrl="Paginas/Logout.aspx" ></asp:MenuItem>
                                             </asp:MenuItem>
                                         </Items>
                                     </asp:Menu>

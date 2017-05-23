@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data.SqlClient;
+using System.Drawing;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -11,23 +12,10 @@ namespace Animalitos.Paginas
 {
     public partial class Login : System.Web.UI.Page
     {
-        private string username = "";
-        private string nivel = "0";
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            Session["usuario"] = username;
-            Session["nivel"] = nivel;
-        }
 
-        protected void LoginPrompt_Authenticate(object sender, AuthenticateEventArgs e)
-        {
-
-        }
-
-        protected void Button1_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("NewUser.aspx");
         }
 
         protected void btnAceptar_Click(object sender, ImageClickEventArgs e)
@@ -55,8 +43,14 @@ namespace Animalitos.Paginas
             }
             else
             {
-
+                lblStatus.ForeColor = Color.Red;
+                lblStatus.Text = "El usuario o la contraseña no son validos";
             }
+        }
+
+        protected void Button1_Click(object sender, ImageClickEventArgs e)
+        {
+            Response.Redirect("NewUser.aspx");
         }
     }
 }
