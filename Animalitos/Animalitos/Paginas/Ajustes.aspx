@@ -3,8 +3,36 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="cphPrincipal" runat="server">
     <div>
+
+        <div>
+            <table width="100%">
+                <tr>
+                    <td align="center">
+                        <table>
+                            <tr>
+                                <td>
+                                            <asp:GridView ID="gvAnimalitos" runat="server"></asp:GridView>
+                                </td>
+                                <td>
+                                            <asp:GridView ID="gvUsuarios" runat="server"></asp:GridView>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        
+        
+
+        
+        
+
+        <div align="left">
+            
+        </div>
         <br />
-        <asp:GridView ID="gvAnimalitos" runat="server"></asp:GridView>
+
         <br />
         <asp:DropDownList ID="ddlAnimalitos" runat="server">
         </asp:DropDownList>
@@ -17,7 +45,7 @@
     </div>
     <div>
         <br />
-        <asp:GridView ID="gvUsuarios" runat="server"></asp:GridView>
+
         <br />
         <asp:DropDownList ID="ddlUsuarios" runat="server">
         </asp:DropDownList>
