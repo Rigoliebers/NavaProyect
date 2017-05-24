@@ -35,7 +35,9 @@
                                             </asp:MenuItem>
 
                                             <asp:MenuItem ImageUrl="Imagenes/Botones/FAQbutton.png" NavigateUrl="Paginas/FAQ.aspx"></asp:MenuItem>
-                                            <asp:MenuItem ImageUrl="Imagenes/Botones/loginbutton.png" NavigateUrl="Paginas/Login.aspx">
+                                            <asp:MenuItem ImageUrl="Imagenes/Botones/cuentabutton.png" Selectable="False">
+                                                <asp:MenuItem ImageUrl="Imagenes/Botones/Loginbutton2.jpg" NavigateUrl="Paginas/Login.aspx"></asp:MenuItem>
+                                                <asp:MenuItem ImageUrl="Imagenes/Botones/ajustesbutton.jpg" NavigateUrl="Paginas/Ajustes.aspx"></asp:MenuItem>
                                                 <asp:MenuItem ImageUrl="Imagenes/Botones/Registrarsebutton.jpg" NavigateUrl="Paginas/NewUser.aspx"></asp:MenuItem>
                                                 <asp:MenuItem ImageUrl="Imagenes/Botones/salirbutton.jpg" NavigateUrl="Paginas/Logout.aspx" ></asp:MenuItem>
                                             </asp:MenuItem>

@@ -3,10 +3,10 @@
     
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="cphPrincipal" runat="server">
-    <div>
-        <asp:label runat="server" text="Estos son los articulos que TU haz apartado"></asp:label>
+    <div align="center">
+        <asp:label runat="server" text="Estos son los articulos que TÚ haz apartado"></asp:label>
     </div> 
-    <div>
+    <div align="center">
         <asp:gridview runat="server" ID="gvCarrito"></asp:gridview>    
     </div>
     

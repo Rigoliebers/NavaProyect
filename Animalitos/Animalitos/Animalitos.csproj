@@ -67,6 +67,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Imagenes\Botones\Aceptarbutton.png" />
+    <Content Include="Imagenes\Botones\ajustesbutton.jpg" />
     <Content Include="Imagenes\Botones\animalitosbutton.png" />
     <Content Include="Imagenes\banner.jpg" />
     <Content Include="Imagenes\Botones\apartarbutton.png" />
@@ -75,6 +76,7 @@
     <Content Include="Imagenes\Botones\ingresarbutton.png" />
     <Content Include="Imagenes\Botones\iniciobutton.png" />
     <Content Include="Imagenes\Botones\loginbutton.png" />
+    <Content Include="Imagenes\Botones\Loginbutton2.jpg" />
     <Content Include="Imagenes\Botones\Nerfthis.jpg" />
     <Content Include="Imagenes\Botones\Registrarsebutton.jpg" />
     <Content Include="Imagenes\Botones\registrarsebuttonloggin.png" />
@@ -82,7 +84,7 @@
     <Content Include="Imagenes\Botones\separador.jpg" />
     <Content Include="Imagenes\Botones\Ventabutton.jpg" />
     <Content Include="Imagenes\bottomIMG.png" />
-    <Content Include="Imagenes\cuentabutton.png" />
+    <Content Include="Imagenes\Botones\cuentabutton.png" />
     <Content Include="Imagenes\Random\1478016340954.jpg" />
     <Content Include="Imagenes\Random\Random3.png" />
     <Content Include="Imagenes\Random\Random1.png" />
@@ -106,6 +108,7 @@
     <Content Include="Paginas\Startup.aspx" />
     <Content Include="Principal.Master" />
     <Content Include="Databeis\Animalitos.bak" />
+    <Content Include="Databeis\Whole New Animlaitos" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
