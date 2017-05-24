@@ -105,6 +105,7 @@
     <Content Include="Paginas\NewUser.aspx" />
     <Content Include="Paginas\Apartar.aspx" />
     <Content Include="Paginas\Redirect.aspx" />
+    <Content Include="Paginas\Startop.aspx" />
     <Content Include="Paginas\Startup.aspx" />
     <Content Include="Principal.Master" />
     <Content Include="Databeis\Animalitos.bak" />
@@ -196,6 +197,13 @@
     </Compile>
     <Compile Include="Paginas\Redirect.aspx.designer.cs">
       <DependentUpon>Redirect.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\Startop.aspx.cs">
+      <DependentUpon>Startop.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\Startop.aspx.designer.cs">
+      <DependentUpon>Startop.aspx</DependentUpon>
     </Compile>
     <Compile Include="Paginas\Startup.aspx.cs">
       <DependentUpon>Startup.aspx</DependentUpon>
