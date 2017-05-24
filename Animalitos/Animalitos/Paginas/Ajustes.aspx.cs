@@ -14,11 +14,11 @@ namespace Animalitos.Paginas
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Session["nivel"] == "0")
+            if (Session["nivel"].Equals("0"))
             {
                 Response.Redirect("Inicio.aspx");
             }
-            if(Session["nivel"] == "1")
+            if(Session["nivel"].Equals("1"))
             {
                 Response.Redirect("Carrito.aspx");
             }
@@ -117,6 +117,24 @@ namespace Animalitos.Paginas
                     }
                 }
             }
+        }
+
+        protected void btnBorrarU_Click(object sender, EventArgs e)
+        {
+            string cnnstring = ConfigurationManager.ConnectionStrings["AnimalitosWebConnectionString"].ConnectionString;
+            string query;
+            SqlConnection con = new SqlConnection();
+            SqlCommand cmd = new SqlCommand();
+            con.ConnectionString = cnnstring;
+            con.Open();
+            cmd.Connection = con;
+            query = "DELETE T_Usuarios where id_usuario = @usuario";
+            cmd.CommandText = query;
+            cmd.Parameters.AddWithValue("@usuario", ddlUsuarios.SelectedValue);
+
+            cmd.ExecuteNonQuery();
+            con.Close();
+            Response.Redirect("Ajustes.aspx");
         }
     }
 }
