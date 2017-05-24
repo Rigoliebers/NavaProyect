@@ -22,7 +22,7 @@ namespace Animalitos.Paginas
         {
             string cnnstring = ConfigurationManager.ConnectionStrings["AnimalitosWebConnectionString"].ConnectionString;
             SqlDataReader sqldr;
-            string query = "SELECT username, password, nivel_usuario FROM T_USUARIOS WHERE username = @USUARIO AND password = @PASSWORD";
+            string query = "SELECT username, password, nivel_usuario, id_usuario FROM T_USUARIOS WHERE username = @USUARIO AND password = @PASSWORD";
             SqlConnection con = new SqlConnection();
             SqlCommand cmd = new SqlCommand();
             con.ConnectionString = cnnstring;
@@ -38,6 +38,7 @@ namespace Animalitos.Paginas
                 var user = sqldr["username"];
                 Session["usuario"] = sqldr["username"];
                 Session["nivel"] = sqldr["nivel_usuario"];
+                Session["id_usuario"] = sqldr["id_usuario"];
                 con.Close();
                 Response.Redirect("Inicio.aspx");
             }

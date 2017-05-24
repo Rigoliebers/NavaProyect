@@ -91,6 +91,7 @@
     <Content Include="Imagenes\zxcgzdrd56y.jpg" />
     <Content Include="Imagenes\zxcvzsretse.png" />
     <Content Include="Paginas\Animalitos.aspx" />
+    <Content Include="Paginas\Carrito.aspx" />
     <Content Include="Paginas\FAQ.aspx" />
     <Content Include="Paginas\Inicio.aspx" />
     <Content Include="packages.config" />
@@ -120,6 +121,13 @@
     </Compile>
     <Compile Include="Paginas\Animalitos.aspx.designer.cs">
       <DependentUpon>Animalitos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\Carrito.aspx.cs">
+      <DependentUpon>Carrito.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\Carrito.aspx.designer.cs">
+      <DependentUpon>Carrito.aspx</DependentUpon>
     </Compile>
     <Compile Include="Paginas\FAQ.aspx.cs">
       <DependentUpon>FAQ.aspx</DependentUpon>
