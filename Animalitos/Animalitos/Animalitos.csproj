@@ -69,6 +69,7 @@
     <Content Include="Imagenes\Botones\Aceptarbutton.png" />
     <Content Include="Imagenes\Botones\animalitosbutton.png" />
     <Content Include="Imagenes\banner.jpg" />
+    <Content Include="Imagenes\Botones\apartarbutton.png" />
     <Content Include="Imagenes\Botones\comprabutton.jpg" />
     <Content Include="Imagenes\Botones\FAQbutton.png" />
     <Content Include="Imagenes\Botones\ingresarbutton.png" />
@@ -99,7 +100,9 @@
     <Content Include="Paginas\NewUser.aspx" />
     <Content Include="Paginas\Apartar.aspx" />
     <Content Include="Paginas\Redirect.aspx" />
+    <Content Include="Paginas\Startup.aspx" />
     <Content Include="Principal.Master" />
+    <Content Include="Databeis\Animalitos.bak" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -173,6 +176,13 @@
     </Compile>
     <Compile Include="Paginas\Redirect.aspx.designer.cs">
       <DependentUpon>Redirect.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\Startup.aspx.cs">
+      <DependentUpon>Startup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\Startup.aspx.designer.cs">
+      <DependentUpon>Startup.aspx</DependentUpon>
     </Compile>
     <Compile Include="Principal.Master.cs">
       <DependentUpon>Principal.Master</DependentUpon>

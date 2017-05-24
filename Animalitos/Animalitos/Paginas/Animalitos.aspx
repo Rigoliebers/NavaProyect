@@ -23,7 +23,10 @@
         <asp:Label runat="server" ID="lblApartar" Text="¡Aparta ahora!" Font-Size="24"></asp:Label>
     </div>
     <div align="center">
-        <asp:DropDownList runat="server" ID="ddlAnimalitos"/>
+        <asp:DropDownList runat="server" ID="ddlAnimalitos" OnSelectedIndexChanged="ddlAnimalitos_OnSelectedIndexChanged"/>
+    </div>
+    <div align="center">
+        <asp:ImageButton runat="server" ImageUrl="../Imagenes/Botones/Aceptarbutton.png" OnClick="OnClick"/>
     </div>
 
 </asp:Content>

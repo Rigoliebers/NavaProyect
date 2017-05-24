@@ -14,6 +14,12 @@ namespace Animalitos.Paginas
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            llenardv();
+            llenarDLL();
+        }
+
+        private void llenardv()
+        {
             string cnnstring = ConfigurationManager.ConnectionStrings["AnimalitosWebConnectionString"].ConnectionString;
             string query = "SELECT especie, raza, descripcion, precio FROM T_Animalitos";
             using (SqlConnection con = new SqlConnection(cnnstring))
@@ -34,6 +40,40 @@ namespace Animalitos.Paginas
                     }
                 }
             }
+        }
+
+        private void llenarDLL()
+        {
+            if (!this.IsPostBack)
+            {
+                string cnnstring = ConfigurationManager.ConnectionStrings["AnimalitosWebConnectionString"].ConnectionString;
+                string query = "SELECT especie, id_animalito FROM T_Animalitos";
+                using (SqlConnection con = new SqlConnection(cnnstring))
+                {
+                    using (SqlCommand cmd = new SqlCommand(query))
+                    {
+                        cmd.CommandType = CommandType.Text;
+                        cmd.Connection = con;
+                        con.Open();
+                        ddlAnimalitos.DataSource = cmd.ExecuteReader();
+                        ddlAnimalitos.DataTextField = "especie";
+                        ddlAnimalitos.DataValueField = "id_animalito";
+                        ddlAnimalitos.DataBind();
+                        con.Close();
+                    }
+                }
+            }
+        }
+
+        protected void ddlAnimalitos_OnSelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void OnClick(object sender, ImageClickEventArgs e)
+        {
+            Session["value"] = ddlAnimalitos.SelectedValue;
+            Response.Redirect("Apartar.aspx");
         }
     }
 }
