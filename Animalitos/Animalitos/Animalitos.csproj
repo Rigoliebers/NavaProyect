@@ -82,6 +82,7 @@
     <Content Include="Imagenes\Botones\separador.jpg" />
     <Content Include="Imagenes\Botones\Ventabutton.jpg" />
     <Content Include="Imagenes\bottomIMG.png" />
+    <Content Include="Imagenes\cuentabutton.png" />
     <Content Include="Imagenes\Random\1478016340954.jpg" />
     <Content Include="Imagenes\Random\Random3.png" />
     <Content Include="Imagenes\Random\Random1.png" />
@@ -90,6 +91,7 @@
     <Content Include="Imagenes\bye.png" />
     <Content Include="Imagenes\zxcgzdrd56y.jpg" />
     <Content Include="Imagenes\zxcvzsretse.png" />
+    <Content Include="Paginas\Ajustes.aspx" />
     <Content Include="Paginas\Animalitos.aspx" />
     <Content Include="Paginas\Carrito.aspx" />
     <Content Include="Paginas\FAQ.aspx" />
@@ -115,6 +117,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Paginas\Ajustes.aspx.cs">
+      <DependentUpon>Ajustes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\Ajustes.aspx.designer.cs">
+      <DependentUpon>Ajustes.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Paginas\Animalitos.aspx.cs">
       <DependentUpon>Animalitos.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
