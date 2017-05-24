@@ -14,16 +14,18 @@ namespace Animalitos.Paginas
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Session["nivel"].Equals("0"))
+            if (Session["nivel"].Equals(0))
             {
                 Response.Redirect("Inicio.aspx");
             }
-            if(Session["nivel"].Equals("1"))
+            if(Session["nivel"].Equals(1))
             {
                 Response.Redirect("Carrito.aspx");
             }
             llenardvAnimalitos();
             llenarDLLAnimalitos();
+            llenardvUsuarios();
+            llenarDLLUsuarios();
         }
         private void llenardvAnimalitos()
         {
