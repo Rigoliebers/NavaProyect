@@ -50,6 +50,6 @@
         <asp:DropDownList ID="ddlUsuarios" runat="server">
         </asp:DropDownList>
 &nbsp;&nbsp;&nbsp;
-        <asp:Button ID="btnBorrarU" runat="server" Text="Borrar" />
+        <asp:Button ID="btnBorrarU" runat="server" Text="Borrar" OnClick="btnBorrarU_Click" />
     </div>
 </asp:Content>
