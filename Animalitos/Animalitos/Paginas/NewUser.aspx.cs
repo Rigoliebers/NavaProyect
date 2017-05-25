@@ -15,12 +15,12 @@ namespace Animalitos.Paginas
         protected void Page_Load(object sender, EventArgs e)
         {
             lblNivel.Visible = false;
-            tbxNivel.Visible = false;
+            ddlNivel.Visible = false;
 
-            if (Session["nivel"].Equals("69"))
+            if (Session["nivel"].Equals(69))
             {
                 lblNivel.Visible = true;
-                tbxNivel.Visible = true;
+                ddlNivel.Visible = true;
             }
         }
         protected void CreateUser_OnContinueButtonClick(object sender, ImageClickEventArgs e)
@@ -46,7 +46,7 @@ namespace Animalitos.Paginas
                 }
                 else
                 {
-                    int nivel = Convert.ToInt16(tbxNivel.Text);
+                    int nivel = Convert.ToInt16(ddlNivel.SelectedValue);
                     con.Close();
                     query = "INSERT INTO T_Usuarios VALUES (@USUARIO,@PASSWORD,@CORREO,@NIVEL)";
                     cmd.Parameters.AddWithValue("@PASSWORD", tbxContraseña.Text);

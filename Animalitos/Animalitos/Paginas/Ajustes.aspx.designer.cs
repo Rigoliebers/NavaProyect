@@ -22,15 +22,6 @@ namespace Animalitos.Paginas {
         protected global::System.Web.UI.WebControls.GridView gvAnimalitos;
         
         /// <summary>
-        /// gvUsuarios control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView gvUsuarios;
-        
-        /// <summary>
         /// ddlAnimalitos control.
         /// </summary>
         /// <remarks>
@@ -65,6 +56,15 @@ namespace Animalitos.Paginas {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnAgregar;
+        
+        /// <summary>
+        /// gvUsuarios control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView gvUsuarios;
         
         /// <summary>
         /// ddlUsuarios control.

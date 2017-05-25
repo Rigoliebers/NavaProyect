@@ -46,7 +46,10 @@
                                 <asp:Label runat="server" Text="Nivel:" ID="lblNivel"></asp:Label>
                             </td>
                             <td>
-                                <asp:TextBox runat="server" ID="tbxNivel" Text="1" Width="160px"></asp:TextBox>
+                                <asp:DropDownList ID="ddlNivel" runat="server" Height="16px" Width="164px">
+                                    <asp:ListItem>1</asp:ListItem>
+                                    <asp:ListItem>69</asp:ListItem>
+                                </asp:DropDownList>
                             </td>
                         </tr>
                     </table>

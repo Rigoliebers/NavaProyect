@@ -9,9 +9,13 @@
         <asp:Label runat="server" ID="lblDescripcion"></asp:Label>
     </div>
     <div align="center">
+        <asp:Label runat="server" Text="$" ID="lblDivisa" Font-Italic="True" Font-Size="18"></asp:Label>
         <asp:Label runat="server" ID="lblPrecio" Font-Italic="True" Font-Size="18"></asp:Label>
     </div>
     <div align="center">
+        <br/>
+        <br/>
+        <br/>
         <asp:ImageButton runat="server" ID="btnAceptar" OnClick="btnAceptar_OnClick" ImageUrl="../Imagenes/Botones/apartarbutton.png" />
     </div>
     

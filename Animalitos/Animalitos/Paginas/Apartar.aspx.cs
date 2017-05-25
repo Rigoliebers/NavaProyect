@@ -15,7 +15,7 @@ namespace Animalitos.Paginas
         string especie, raza;
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Session["nivel"].Equals("0"))
+            if (Session["nivel"].Equals(0))
             {
                 Response.Write("<script>alert('Por favor ingrese o registrese para poder ver el catalogo');</script>");
                 Response.Redirect("Login.aspx");

@@ -13,10 +13,8 @@
                                 <td>
                                             <asp:GridView ID="gvAnimalitos" runat="server"></asp:GridView>
                                 </td>
-                                <td>
-                                            <asp:GridView ID="gvUsuarios" runat="server"></asp:GridView>
-                                </td>
                             </tr>
+
                         </table>
                     </td>
                 </tr>
@@ -37,15 +35,15 @@
         <asp:DropDownList ID="ddlAnimalitos" runat="server">
         </asp:DropDownList>
 &nbsp;&nbsp;&nbsp;
-        <asp:Button ID="btnEditar" runat="server" Text="Editar" />
+        <asp:Button ID="btnEditar" runat="server" Text="Editar" OnClick="btnEditar_OnClick" />
 &nbsp;&nbsp;&nbsp;
-        <asp:Button ID="btnBorrar" runat="server" Text="Borrar" />
+        <asp:Button ID="btnBorrar" runat="server" Text="Borrar" OnClick="btnBorrar_Click" />
 &nbsp;&nbsp;&nbsp;
-        <asp:Button ID="btnAgregar" runat="server" Text="Agregar" />
+        <asp:Button ID="btnAgregar" runat="server" Text="Agregar" OnClick="btnAgregar_Click" />
     </div>
     <div>
         <br />
-
+                                                                                <asp:GridView ID="gvUsuarios" runat="server"></asp:GridView>
         <br />
         <asp:DropDownList ID="ddlUsuarios" runat="server">
         </asp:DropDownList>

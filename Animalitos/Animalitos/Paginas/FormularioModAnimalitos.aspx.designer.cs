@@ -10,16 +10,7 @@
 namespace Animalitos.Paginas {
     
     
-    public partial class Venta {
-        
-        /// <summary>
-        /// imgAnimalito control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Image imgAnimalito;
+    public partial class FormularioModAnimalitos {
         
         /// <summary>
         /// lblDescripcion control.
@@ -31,13 +22,13 @@ namespace Animalitos.Paginas {
         protected global::System.Web.UI.WebControls.Label lblDescripcion;
         
         /// <summary>
-        /// lblDivisa control.
+        /// tbxDescripcion control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblDivisa;
+        protected global::System.Web.UI.WebControls.TextBox tbxDescripcion;
         
         /// <summary>
         /// lblPrecio control.
@@ -47,6 +38,33 @@ namespace Animalitos.Paginas {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblPrecio;
+        
+        /// <summary>
+        /// tbxPrecio control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox tbxPrecio;
+        
+        /// <summary>
+        /// lblImagen control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblImagen;
+        
+        /// <summary>
+        /// tbxImagen control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox tbxImagen;
         
         /// <summary>
         /// btnAceptar control.
